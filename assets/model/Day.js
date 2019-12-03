@@ -24,6 +24,12 @@ class Day{
         return date.toDateString() === Day.currentDate.toDateString()
     }
 
+    getDayName(lang, option){
+
+        return this.date.toLocaleString(lang, option)
+
+    }
+
     static currentDate = new Date();
 
 }
