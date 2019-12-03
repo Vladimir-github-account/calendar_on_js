@@ -10,6 +10,7 @@ class Day{
     get date(){
         return this._date;
     }
+
     set date(value){
         this._isCurrent = Day.isCurrent(value);
         this._date = value;
@@ -19,12 +20,12 @@ class Day{
         return this._isCurrent;
     }
 
-
-
     static isCurrent(date){
         return date.toDateString() === Day.currentDate.toDateString()
     }
+
     static currentDate = new Date();
+
 }
 
 
