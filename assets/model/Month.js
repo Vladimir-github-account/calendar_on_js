@@ -7,6 +7,7 @@ class Month{
         this._weeks = [];
         this._date = date;
 
+
         const monday = Week.getMonday(new Date(date.getFullYear(), date.getMonth(), 1));
         do {
             this._weeks.push( new Week(monday) );
@@ -22,7 +23,6 @@ class Month{
     get date(){
         return this._date;
     }
-
 
 
 }

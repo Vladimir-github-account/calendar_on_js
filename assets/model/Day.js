@@ -5,6 +5,7 @@ class Day{
     constructor(date){
         this._date = date;
         this._isCurrent = Day.isCurrent(date);
+        this._isCurrentMonth = Day.isCurrentMonth(date);
     }
 
     get date(){
@@ -20,8 +21,16 @@ class Day{
         return this._isCurrent;
     }
 
+    get isCurrentMonth(){
+        return this._isCurrentMonth;
+    }
+
     static isCurrent(date){
         return date.toDateString() === Day.currentDate.toDateString()
+    }
+
+    static isCurrentMonth(date){
+        return date.getMonth() === Day.currentDate.getMonth() ;
     }
 
     getDayName(lang, option){
