@@ -42,6 +42,7 @@ export default function (month) {
     calendarHeadElem.appendChild(weekHeaders);
 
 
+
     return calendarHeadElem;
 
 

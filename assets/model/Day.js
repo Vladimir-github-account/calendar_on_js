@@ -30,7 +30,7 @@ class Day{
     }
 
     static isCurrentMonth(date){
-        return date.getMonth() === Day.currentDate.getMonth() ;
+        return date.getMonth() === Day.currentDate.getMonth() && date.getFullYear() === Day.currentDate.getFullYear() ;
     }
 
     getDayName(lang, option){

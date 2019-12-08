@@ -12,8 +12,6 @@ export default function (month) {
     calendarTableElem.appendChild( createCalendarHeader(month) );
     calendarTableElem.appendChild( createCalendarBody(month) );
 
-
-
     return calendarTableElem;
 
 };
